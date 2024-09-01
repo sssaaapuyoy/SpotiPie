@@ -19,6 +19,18 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope=SCOPE
 ))
 
+Banner = (
+                                                                    
+    //   ) )                                    //   ) )            
+   ((         ___      ___    __  ___ ( )      //___/ / ( )  ___    
+     \\     //   ) ) //   ) )  / /   / /      / ____ / / / //___) ) 
+       ) ) //___/ / //   / /  / /   / /      //       / / //        
+((___ / / //       ((___/ /  / /   / /      //       / / ((____     
+
+    
+)
+
+
 def clear_screen():
     """Clear the terminal screen."""
     if platform.system() == "Windows":
