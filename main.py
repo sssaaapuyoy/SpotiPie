@@ -31,6 +31,9 @@ Banner = (
 )
 
 
+def Show_Banner():
+    print(Banner)
+
 def clear_screen():
     """Clear the terminal screen."""
     if platform.system() == "Windows":
