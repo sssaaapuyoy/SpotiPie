@@ -96,6 +96,7 @@ def ask_to_download(playlist_name, total_tracks, track_urls):
 def main():
     """Main function to execute the script."""
     clear_screen()
+    Show_Banner()
     playlist_url = input('Playlist URL: ')
     playlist_id = playlist_url.split('/')[-1].split('?')[0]  # Extract the playlist ID from the URL
     
