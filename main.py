@@ -5,9 +5,9 @@ import os
 import platform
 
 # Spotify API credentials
-SPOTIPY_CLIENT_ID = '5fc09ce2307241598c0c6f44e73d2882'
-SPOTIPY_CLIENT_SECRET = 'a03e413351184b3f9965f03140431253'
-SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
+SPOTIPY_CLIENT_ID = ''
+SPOTIPY_CLIENT_SECRET = ''
+SPOTIPY_REDIRECT_URI = ''
 # Scope needed to access a user's playlists and read their contents
 SCOPE = 'playlist-read-private playlist-read-collaborative'
 
