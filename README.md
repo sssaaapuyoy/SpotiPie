@@ -15,6 +15,8 @@ python3 SpotiPie.py
 _do i really need to explain?_
 
 ## Usage
+*Note*: **If you are running this script for the first time, you will need to log in to your Spotify account. This is to verify that you are the owner of the account associated with the Client ID and Client Secret you provided. Make sure to use the exact account linked to these credentials.**
+
 ```
 python3 SpotiPie.py
 ```
