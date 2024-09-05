@@ -8,7 +8,7 @@ SpotiPie is a Python script that leverages **__Spotdl__** to help you download a
 ```
 git clone https://github.com/DryShower/SpotiPie.git
 cd SpotiPie
-pip install -r 
+pip install -r requirements.txt
 python3 SpotiPie.py
 ```
 **For Windows?!** 
