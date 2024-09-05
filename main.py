@@ -1,15 +1,17 @@
-import spotipy
-from spotipy.oauth2 import SpotifyOAuth
 import subprocess
 import os
 import platform
 
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
+
+version = '1.0.0'
+
 # Spotify API credentials
-SPOTIPY_CLIENT_ID = ''
-SPOTIPY_CLIENT_SECRET = ''
-SPOTIPY_REDIRECT_URI = ''
-# Scope needed to access a user's playlists and read their contents
-SCOPE = 'playlist-read-private playlist-read-collaborative'
+SPOTIPY_CLIENT_ID = 'nah get your own id'
+SPOTIPY_CLIENT_SECRET = 'nah get your own secret client'
+SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
+SCOPE = 'playlist-read-private playlist-read-collaborative'# Scope needed to access a user's playlists and read their contents
 
 # Authenticate with Spotify
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
@@ -19,18 +21,16 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope=SCOPE
 ))
 
-Banner = (
-                                                                    
+Banner = f"""
+     ______                                      ______
     //   ) )                                    //   ) )            
-   ((         ___      ___    __  ___ ( )      //___/ / ( )  ___    
+   ((         ___      ___    __  ___ ( )      //___/ / ( )  ____   
      \\     //   ) ) //   ) )  / /   / /      / ____ / / / //___) ) 
        ) ) //___/ / //   / /  / /   / /      //       / / //        
-((___ / / //       ((___/ /  / /   / /      //       / / ((____     
+((___ / / //       ((___/ /  / /   / /      //       / / ((____  
 
-    
-)
-
-
+                                                            {version}
+"""
 def Show_Banner():
     print(Banner)
 
@@ -97,6 +97,7 @@ def main():
     """Main function to execute the script."""
     clear_screen()
     Show_Banner()
+    
     playlist_url = input('Playlist URL: ')
     playlist_id = playlist_url.split('/')[-1].split('?')[0]  # Extract the playlist ID from the URL
     
