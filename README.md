@@ -11,3 +11,8 @@ python3 main.py
 ```
 **For Windows?!** 
 _do i really need to explain?_
+
+## Usage
+```
+python3 main.py
+```
