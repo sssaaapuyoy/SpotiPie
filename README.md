@@ -6,7 +6,7 @@ this script overcomes the problem of downloading playlists in spotdl.
 ## how to install
 linux
 ```
-git clone
+git clone https://github.com/DryShower/SpotiPie.git
 cd SpotiPie
 python3 main.py
 ```
