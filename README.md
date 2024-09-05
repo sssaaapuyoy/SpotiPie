@@ -1,5 +1,6 @@
 # SpotiPie
 SpotiPie is a Python script that leverages **__Spotdl__** to help you download and manage Spotify playlists. This script addresses some of the issues users face when trying to download playlists using __Spotdl__.
+basically a automated script to install playlists from spotify
 ## Preview
 ![Preview](https://github.com/user-attachments/assets/d5c24851-fbd0-43d4-964f-98f702f3147a)
 
