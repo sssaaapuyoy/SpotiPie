@@ -7,9 +7,9 @@ from spotipy.oauth2 import SpotifyOAuth
 
 version = '1.0.0'
 
-# Spotify API credentials
-SPOTIPY_CLIENT_ID = 'nah get your own id'
-SPOTIPY_CLIENT_SECRET = 'nah get your own secret client'
+# Spotify API Credentials
+SPOTIPY_CLIENT_ID = 'Sike! Get your own Credentials!'
+SPOTIPY_CLIENT_SECRET = ''
 SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 SCOPE = 'playlist-read-private playlist-read-collaborative'# Scope needed to access a user's playlists and read their contents
 
@@ -21,18 +21,23 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope=SCOPE
 ))
 
-Banner = f"""
-     ______                                      ______
-    //   ) )                                    //   ) )            
-   ((         ___      ___    __  ___ ( )      //___/ / ( )  ____   
-     \\     //   ) ) //   ) )  / /   / /      / ____ / / / //___) ) 
-       ) ) //___/ / //   / /  / /   / /      //       / / //        
-((___ / / //       ((___/ /  / /   / /      //       / / ((____  
+BRIGHT_YELLOW = "\033[93m"
+RESET = "\033[0m"
 
-                                                            {version}
+Banner = f"""
+{BRIGHT_YELLOW}
+    _____         _   _    _____ _     
+    |   __|___ ___| |_|_|  |  _  |_|___ 
+    |__   | . | . |  _| |  |   __| | -_|
+    |_____|  _|___|_| |_|  |__|  |_|___|
+        |_|                           
+
+                                  {version}
+{RESET}
 """
 def Show_Banner():
     print(Banner)
+
 
 def clear_screen():
     """Clear the terminal screen."""
@@ -47,7 +52,7 @@ def get_playlist_info(playlist_id):
         playlist = sp.playlist(playlist_id)
         return playlist['name']
     except spotipy.SpotifyException as e:
-        print(f"Error retrieving playlist: {e}")
+        print(f"  Error retrieving playlist: {e}")
         return None
 
 def get_playlist_tracks(playlist_id):
@@ -61,12 +66,12 @@ def get_playlist_tracks(playlist_id):
             tracks.extend(results['items'])
         return tracks, total_tracks
     except spotipy.SpotifyException as e:
-        print(f"Error retrieving tracks: {e}")
+        print(f"  Error retrieving tracks: {e}")
         return [], 0
 
 def download_tracks(playlist_name, track_urls):
     """Download tracks using spotdl."""
-    print("Downloading songs...\n")
+    print("  Downloading songs...\n")
     downloaded_count = 0
     if not os.path.exists(playlist_name):
         os.mkdir(playlist_name)
@@ -78,27 +83,27 @@ def download_tracks(playlist_name, track_urls):
             if result.returncode == 0:
                 downloaded_count += 1
             else:
-                print(f"Error downloading {url}")
+                print(f"  Error downloading {url}")
         except subprocess.CalledProcessError as e:
-            print(f"Error downloading {url}: {e}")
+            print(f"  Error downloading {url}: {e}")
     
     os.chdir("..")  # Change back to the original directory
-    print(f"\nDownloaded {downloaded_count} songs from the playlist '{playlist_name}'.")
+    print(f"\n  Downloaded {downloaded_count} songs from the playlist '{playlist_name}'.")
 
 def ask_to_download(playlist_name, total_tracks, track_urls):
     """Ask the user if they want to download the songs."""
-    user_input = input(f"Do you want to download these {total_tracks} songs from '{playlist_name}'? [Y/n]: ")
-    if user_input.lower() in ['y', 'yes']:
+    user_input = input(f"  Do you want to download these {total_tracks} songs from '{playlist_name}'? [Y/n]: ")
+    if user_input.lower() in ['y', 'Y', 'yes', 'Yes', 'Ye', 'ye']:
         download_tracks(playlist_name, track_urls)
     else:
-        print("Download cancelled.")
+        print("  Download cancelled.")
 
 def main():
     """Main function to execute the script."""
     clear_screen()
     Show_Banner()
     
-    playlist_url = input('Playlist URL: ')
+    playlist_url = input('  Playlist URL: ')
     playlist_id = playlist_url.split('/')[-1].split('?')[0]  # Extract the playlist ID from the URL
     
     playlist_name = get_playlist_info(playlist_id)
@@ -107,7 +112,8 @@ def main():
         track_urls = [item['track']['external_urls']['spotify'] for item in tracks]
         ask_to_download(playlist_name, total_tracks, track_urls)
     else:
-        print("Failed to retrieve playlist information.")
+        print("\n  Failed to retrieve playlist information. \n  checking the playlist url might help.")
+
 
 if __name__ == '__main__':
     main()
