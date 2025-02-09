@@ -5,7 +5,7 @@ import platform
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-version = '1.0.0'
+version = '1.0.1'
 
 # Spotify API credentials
 SPOTIPY_CLIENT_ID = 'Sikee! Get Your own Credentials.'
@@ -26,11 +26,9 @@ RESET = "\033[0m"
 
 Banner = f"""
 {BRIGHT_YELLOW}
-    _____         _   _    _____ _     
-    |   __|___ ___| |_|_|  |  _  |_|___ 
-    |__   | . | . |  _| |  |   __| | -_|
-    |_____|  _|___|_| |_|  |__|  |_|___|
-        |_|                           
+   
+        █▀ █▀█ █▀█ ▀█▀ █   █▀█ █ █▀▀
+        ▄█ █▀▀ █▄█ ░█░ █   █▀▀ █ ██▄                       
 
                                   {version}
 {RESET}
