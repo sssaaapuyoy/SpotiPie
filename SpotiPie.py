@@ -8,7 +8,7 @@ from spotipy.oauth2 import SpotifyOAuth
 version = '1.0.1'
 
 # Spotify API credentials
-SPOTIPY_CLIENT_ID = 'Sikee! Get Your own Credentials.'
+SPOTIPY_CLIENT_ID = ''
 SPOTIPY_CLIENT_SECRET = ''
 SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback'
 SCOPE = 'playlist-read-private playlist-read-collaborative'# Scope needed to access a user's playlists and read their contents
@@ -27,8 +27,8 @@ RESET = "\033[0m"
 Banner = f"""
 {BRIGHT_YELLOW}
    
-    █▀ █▀█ █▀█ ▀█▀ █   █▀█ █ █▀▀
-    ▄█ █▀▀ █▄█ ░█░ █   █▀▀ █ ██▄                       
+      █▀ █▀█ █▀█ ▀█▀ █   █▀█ █ █▀▀
+      ▄█ █▀▀ █▄█ ░█░ █   █▀▀ █ ██▄                       
 
                                   {version}
 {RESET}
@@ -110,6 +110,8 @@ def main():
         ask_to_download(playlist_name, total_tracks, track_urls)
     else:
         print("\n  Failed to retrieve playlist information. \n  checking the playlist url might help.")
+
+    input('')
 
 
 if __name__ == '__main__':
