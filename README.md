@@ -5,15 +5,12 @@ basically a automated script to install playlists from spotify
 ![Preview](https://github.com/user-attachments/assets/d5c24851-fbd0-43d4-964f-98f702f3147a)
 
 ## how to install
-**For Linux**
 ```
 git clone https://github.com/DryShower/SpotiPie.git
 cd SpotiPie
 pip install -r requirements.txt
 python3 SpotiPie.py
 ```
-**For Windows?!** 
-_do i really need to explain?_
 
 ## Usage
 *Note*: **If you are running this script for the first time, you will need to log in to your Spotify account. This is to verify that you are the owner of the account associated with the Client ID and Client Secret you provided. Make sure to use the exact account linked to these credentials.**
