@@ -53,7 +53,7 @@ Before running the script, you need the following:
     - Clone this repository to your local machine:
       ```bash
       git clone https://github.com/your-username/spotify-playlist-downloader.git
-      cd spotify-playlist-downloader
+      cd SpotiPie-main
       ```
 
 4. **Configure the script**:
