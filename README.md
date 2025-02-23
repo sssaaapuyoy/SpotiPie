@@ -61,9 +61,9 @@ Before running the script, you need the following:
 
 ---
 
-## How to Run the Script 🚀
+## How to Run the Script 💻
 
-### Windows 💻
+### 
 
 1. Open **Terminal**.
 2. Navigate to the folder where you saved the script:
