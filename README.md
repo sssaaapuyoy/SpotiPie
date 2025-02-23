@@ -58,25 +58,20 @@ Before running the script, you need the following:
 
 ## Installation and Setup ⚙️
 
-1. **Install Python dependencies**:
-    - Open your terminal and run the following command:
-      ```bash
-      pip install spotipy spotdl
-      ```
 
-2. **Obtain Spotify Developer Credentials**:
+1. **Obtain Spotify Developer Credentials**:
     - Log in to the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications) and create a new application.
     - Copy the `SPOTIPY_CLIENT_ID`, `SPOTIPY_CLIENT_SECRET`, and set the `SPOTIPY_REDIRECT_URI` to `http://localhost:8888/callback`.
     - Paste these credentials in the script where indicated.
 
-3. **Clone the repository**:
+2. **Clone the repository**:
     - Clone this repository to your local machine:
       ```bash
       git clone https://github.com/sssaaapuyoy/SpotiPie.git
       cd SpotiPie-main
       ```
 
-4. **Configure the script**:
+3. **Configure the script**:
     - Open the script (`SpotiPieV2.py`) and replace the placeholders for your `SPOTIPY_CLIENT_ID`, `SPOTIPY_CLIENT_SECRET`, and `SPOTIPY_REDIRECT_URI`.
 
 ---
