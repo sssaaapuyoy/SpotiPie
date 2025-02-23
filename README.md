@@ -69,3 +69,4 @@ Before running the script, you need the following:
 2. Navigate to the folder where you saved the script:
    ```bash
    cd path\to\SpotiPie-main
+   python3 SpotiPieV2
