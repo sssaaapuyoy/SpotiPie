@@ -34,7 +34,7 @@ Before running the script, ensure you have the following:
 
 1. **Python 3.6+** installed on your system.
 2. **Spotify Developer Account**:
-   - Create a Spotify Developer App to obtain your **client ID**, **client secret**, and **redirect URI**.
+   - Create a [Spotify Developer](https://developer.spotify.com/dashboard/applications) App and create a new application. App to obtain your **client ID**, **client secret**, and **redirect URI**.
    - Set the **Redirect URI** to `http://localhost:8888/callback`.
 3. **Required Python Libraries**:
    - All required dependencies are listed in the **requirements.txt** file.
