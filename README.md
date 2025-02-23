@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/10e43ad7-edad-45e7-9161-1976cb30ff24)
 # Spotify Playlist Downloader 🎵
 
 Welcome to **SpotiPie**! This Python script allows you to download all tracks from any Spotify playlist using the **spotdl** tool. The script fetches track details using the **Spotify API**, then downloads the songs in parallel, making the process faster and more efficient.
