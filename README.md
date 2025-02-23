@@ -1,6 +1,6 @@
 # Spotify Playlist Downloader 🎵
 
-Welcome to the **Spotify Playlist Downloader**! This Python script allows you to download all tracks from any Spotify playlist using the **spotdl** tool. The script fetches track details using the **Spotify API**, and then proceeds to download the songs in parallel, making the process faster and more efficient.
+Welcome to the **SpotiPie**! This Python script allows you to download all tracks from any Spotify playlist using the **spotdl** tool. The script fetches track details using the **Spotify API**, and then proceeds to download the songs in parallel, making the process faster and more efficient.
 
 
 ---
