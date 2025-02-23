@@ -23,7 +23,6 @@ Before running the script, you need the following:
 2. **Install dependencies**: 
     - **spotipy**: For interacting with the Spotify API.
     - **spotdl**: For downloading music from Spotify.
-    - **concurrent.futures**: For parallel processing (part of Python's standard library).
     
     You can install the dependencies by running:
 
@@ -58,7 +57,7 @@ Before running the script, you need the following:
       ```
 
 4. **Configure the script**:
-    - Open the script (`download_playlist.py`) and replace the placeholders for your `SPOTIPY_CLIENT_ID`, `SPOTIPY_CLIENT_SECRET`, and `SPOTIPY_REDIRECT_URI`.
+    - Open the script (`SpotiPieV2.py`) and replace the placeholders for your `SPOTIPY_CLIENT_ID`, `SPOTIPY_CLIENT_SECRET`, and `SPOTIPY_REDIRECT_URI`.
 
 ---
 
@@ -66,7 +65,7 @@ Before running the script, you need the following:
 
 ### Windows 💻
 
-1. Open **Command Prompt** or **PowerShell**.
+1. Open **Terminal**.
 2. Navigate to the folder where you saved the script:
    ```bash
-   cd path\to\spotify-playlist-downloader
+   cd path\to\SpotiPie-main
