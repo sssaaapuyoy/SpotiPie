@@ -47,7 +47,7 @@ Before running the script, you need the following:
     You can install the dependencies by running:
 
     ```bash
-    pip install spotipy spotdl
+    pip install -r requirements.txt
     ```
 
 3. **Spotify Developer Account**: You'll need to create a **Spotify Developer App** to get your **client ID**, **client secret**, and **redirect URI**. 
