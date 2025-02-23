@@ -28,6 +28,28 @@ While SpotiPie is a powerful tool, please consider the following drawbacks:
 - **Only Your Own Playlists**: The script can download only playlists that you own or have created, not public playlists that you do not own, due to Spotify API limitations.
 
 ---
+⚠️ Disclaimer
+By using SpotiPie, you agree to the following terms and conditions:
+
+Legal Responsibility:
+SpotiPie is intended for personal use only. Downloading tracks from Spotify may violate Spotify's terms of service and copyright laws. You are solely responsible for ensuring that your use of this script complies with all applicable laws and regulations in your region.
+
+Third-Party Dependencies:
+SpotiPie relies on third-party services, such as spotdl and the Spotify API. These services are subject to change, and SpotiPie may not always function as expected due to external factors, such as API changes or outages. We are not responsible for any issues or disruptions caused by these dependencies.
+
+Privacy and Authentication:
+SpotiPie requires access to your Spotify account for authentication purposes. By using this script, you grant the necessary permissions for authentication, and you acknowledge the risks involved in sharing your Spotify credentials.
+
+Use at Your Own Risk:
+While we strive to ensure that SpotiPie functions correctly, the software is provided "as-is", without any warranties or guarantees. We are not responsible for any data loss, system malfunctions, or damages resulting from the use of this script.
+
+No Commercial Use:
+This script is not intended for commercial use or for downloading content for redistribution or resale. It is intended solely for personal enjoyment of your own playlists.
+
+Responsibility:
+By using SpotiPie, you agree to take full responsibility for your actions, including any violations of Spotify's terms of service and copyright laws. The authors are not liable for any consequences arising from the use of this script.
+
+---
 
 ## Prerequisites 🛠️
 
