@@ -15,6 +15,26 @@ Welcome to the **SpotiPie**! This Python script allows you to download all track
 
 ---
 
+## Cons ⚠️
+
+While the Spotify Playlist Downloader is a powerful tool, there are some drawbacks you should consider:
+
+- **Spotdl Dependency**: The script relies on **spotdl**, which in turn depends on third-party services. Occasionally, **spotdl** might encounter errors or may not support all track types or regions, leading to incomplete downloads.
+  
+- **Rate Limiting**: The script interacts with Spotify's API, which can impose rate limits. If you download too many tracks in a short time, you may be temporarily blocked from making requests, or receive an error.
+
+- **No Built-In Error Recovery**: If a track fails to download, the script does not attempt to retry or recover the failed download. You may need to re-run the script or download problematic tracks manually.
+
+- **Not for Large Playlists**: For playlists with a large number of tracks, the process may take a significant amount of time, even with parallel downloads. Network speeds and the spotdl tool’s limitations might cause slowdowns.
+
+- **Manual Spotify Authentication**: For first-time use, users need to authenticate the application manually, which could be confusing for those not familiar with the Spotify API.
+
+- **Legal Concerns**: Downloading tracks from Spotify may violate their terms of service and copyright laws. Use this tool responsibly and only for tracks that you have permission to download.
+
+- **Only Your Own Playlists**: The script is designed to download only playlists that you own or have created. It will not work for playlists that are public but not owned by you. This is due to the limitations of Spotify's API regarding access to non-personal playlists.
+
+
+---
 ## Prerequisites 🛠️
 
 Before running the script, you need the following:
