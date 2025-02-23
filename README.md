@@ -52,7 +52,7 @@ Before running the script, you need the following:
 3. **Clone the repository**:
     - Clone this repository to your local machine:
       ```bash
-      git clone [https://github.com/sssaaapuyoy/SpotiPie.git]
+      git clone https://github.com/sssaaapuyoy/SpotiPie.git
       cd SpotiPie-main
       ```
 
