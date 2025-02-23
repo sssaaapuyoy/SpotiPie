@@ -46,4 +46,7 @@ Before running the script, ensure you have the following:
 1. **Install Dependencies**:  
    In your terminal, navigate to the project directory and run:
    ```bash
+   git clone https://github.com/sssaaapuyoy/SpotiPie.git
+   cd SpotiPie-main
    pip install -r requirements.txt
+   python3 SpotiPieV2.py
